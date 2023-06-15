@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Form Pendataan</title>
+    </head>
+    <body>
+        <div>
+        <div class="hader">
+            <h1>Form Pendataan</h1>
+            <p>Isi form pendataan dibawah ini</p>
+        </div>
+        <div class="main">
+            <fieldset>
+                <label for="nama">Nama: <input id="nama" type="text" required /></label>
+                <label for="email">Email: <input id="email" type="email" required /></label>
+                <label for="umur">Umur: <input id="umur" type="number" min="13" max="100" /></label>
+            </fieldset>
+            <fieldset>
+                <label class="inline" for="personal"><input id="personal" type="radio" name="personal-business" />Personal</label>
+                <label class="inline"  for="business"><input id="business" type="radio" name="personal-business" />Bisnis</label>
+                <label for="terms-conditions"><input id="terms-conditions" type="checkbox" required>Saya telah membaca <a href="">syarat dan ketentuan</a></label>
+            </fieldset>
+            <fieldset>
+                <label>Darimana kamu mengetahui form ini?
+                <select name="known" id="know">
+                    <option value="0">(Pilih Salah Satu)</option>
+                    <option value="1">Teman</option>
+                    <option value="2">Keluarga</option>
+                    <option value="3">Internet</option>
+                    <option value="4">Lainnya...</option>
+                </select>
+                </label>
+            </fieldset>
+            <input class="center" type="submit" />
+        </div>
+        </div>
+    </body>
+</html>
