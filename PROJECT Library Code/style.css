@@ -1,0 +1,57 @@
+* {
+    /*border: 0.2px solid red;*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+nav {
+    text-align: left;
+    background-color: #0a0a15;
+    color: white;
+    padding: 1px;
+}
+
+h5 {
+    font-weight: normal;
+}
+
+.nonav {
+    padding: 20px 25px; 
+}
+
+.container {
+    margin: 30px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nomor::before {
+    content: "Nomor ";
+}
+
+.kode::before {
+    content: "<";
+    color: mediumblue;
+}
+
+.kode {
+    color: brown;
+    width: 100%;
+    padding: 3px 0;
+}
+
+.kode::after {
+    content: ">";
+    color: mediumblue;
+}
+
+.nomor {
+    width: 100%;
+}
